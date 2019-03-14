@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>结算页</title>
+<link type="text/css" rel="stylesheet" href="style/reset.css">
+<link type="text/css" rel="stylesheet" href="style/main.css">
+<script src="js/jquery-1.12.1.min.js"></script>
+<script>
+	$(function(){
+		
+	  $(".showlegou").hover(function(){
+		  $(this).children("ul").toggle();
+	  });
+	});
+</script>
+</head>
+<body>
+<div class="headerBar">
+	<div class="topBar">
+		<div class="comWidth">
+			<div class="leftArea">
+				<a href="#" class="collection">收藏乐购网</a>
+			</div>
+			<div class="rightArea">
+				欢迎来到乐购网！<a href="#">[登录]</a><a href="#">[免费注册]</a>
+			</div>
+		</div>
+	</div>
+	<div class="logoBar">
+		<div class="comWidth">
+			<div class="logo fl">
+				<a href="#"><img src="images/logolg.jpg" alt="乐购网"></a>
+			</div>
+			<div class="orderstate clearfix">
+				<div class="orderstate-lianjie clearfix">
+					<span>1</span>
+					<div class="active"></div>
+					<span>2</span>
+					<div class=""></div>
+					<span>3</span>
+				</div>
+				<div class="orderstate-text clearfix">
+					<span class="order-car active">我的购物车</span>
+					<span class="order-line active">填写核对订单</span>
+					<span class="order-sucess">订单提交成功</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="accountboxs comWidth">
+	<div class="Receiving-info">
+		<p>收货信息</p>
+		<table>
+			<tr>				
+				<td class="Receiving-info-title"><em>*</em>选择地区:</td>
+				<td class="Receiving-info-right">
+					<div class="address">
+						<div class="select">
+							<h3>送至海淀区五环内</h3><span></span>
+							<ul class="show_select">
+								<li>西乡塘区大学路1</li>
+								<li>西乡塘区大学路2</li>
+								<li>西乡塘区大学路3</li>
+								<li>西乡塘区大学路4</li>
+								<li>西乡塘区大学路5</li>
+								<li>西乡塘区大学路6</li> 
+							</ul>
+						</div>
+			        </div>
+				</td>
+			</tr>
+			<tr>				
+				<td class="Receiving-info-title"><em>*</em>详细地区:</td>
+				<td class="Receiving-info-right"><input type="text" class="Receiving-addess" placeholder="最多输入二十六个字"></td>
+			</tr>
+			<tr>
+				<td class="Receiving-info-title"><em>*</em>收&ensp;货&ensp;人:</td>
+				<td class="Receiving-info-right"><input type="text" class="Receiving-people" placeholder="最多输入十个字"></td>
+			</tr>
+			<tr>
+				<td class="Receiving-info-title "><em>*</em>手&nbsp;&nbsp;机:</td>
+				<td class="Receiving-info-right Receiving-phone"><input type="text" class="Receiving-phoneNumber" placeholder="如15278706967"></td>
+				<td class="Receiving-telephone telephone">或固定电话</td>
+				<td class="quhaoleftArea"><input type="text" class="quhao" placeholder="区号">-<input type="text" class="dianhuahaoma" placeholder="电话号码">-<input type="text" class="fenjihao" placeholder="分级号(可选填)"></td>
+			</tr>
+		</table>
+		<input type="button" class="queren-address" value="确认收货地址">
+	</div>
+	<div class="paymentboxs">
+		<p class="payment">支付方式</p>
+		<div class="payment-one">
+			<input type="radio" checked="checked" ><span>微信支付</span> <p>用微信扫一扫就能支付！</p>
+		</div>
+		<div class="payment-two">
+			<input type="radio" ><span>货到付款</span> <p>送货上门再付款，使用现金或刷银行卡.</p>
+		</div>
+	</div>
+	<div class="invoiceInfoboxs">
+		<p class="invoiceInfo">发票信息</p>
+		<div class="distance">
+			<label class="distance-checked01"><input type="checkbox" class="distance-checked02" checked="checked">需要发票</label>
+			<div class="invoicetype-select">
+				<i></i>
+				<div>
+					发票类型：<select name="" id="">
+						<option value="">零售商发票</option>
+						<option value="">专票</option>
+					</select>
+				</div>
+			</div>
+			<div class="invoicetype-select2">
+				<i></i>
+				<div>
+					发票抬头：<select name="" id="">
+						<option value="">个人</option>
+						<option value="">公司</option>
+					</select>
+					<input type="text" placeholder="阿斯顿">
+				</div>
+			</div>
+			<div class="invoicebtn">
+				<input type="button" class="btn1" value="保存">
+				<input type="button" class="btn2" value="取消">
+			</div>
+		</div>
+	</div>
+	<div class="deliveryboxs">
+		<div class="delivery-title clearfix">
+			<p class="delivery">送货信息</p>
+			<a class="catfanhui" href="#">返回购物车修改</a>
+		</div>
+		<div class="shoptcattitle clearfix">
+			<p class="shoptcattitle1">商品名称</p>
+			<p class="shoptcattitle2">单价</p>
+			<p class="shoptcattitle3">返现</p>
+			<p class="shoptcattitle4">数量</p>
+			<p class="shoptcattitle5">小计</p>
+		</div>
+		<div class="shoptcatlist clearfix">
+			<div class="list1">
+				<div class="list1left">
+					<img src="images/bingxiang.jpg" alt="">
+				</div>
+				<div class="list1right">
+					<div class="list1rightp">
+					 <p class="p1">Hisense海信 BCD-202D 202升 三门冰箱 (银色)</p>
+					</div>
+					<p class="p2">[赠品]保鲜盒.抽真空保鲜盒-海信冰洗赠品</p>
+				</div>
+			</div>
+			<div class="list2">
+				<p>￥ 1499.00</p>
+			</div>
+			<div class="list3">
+				<p>￥ 0.00</p>
+			</div>
+			<div class="list4">
+				<div class="list4top">
+					<p>1</p>
+				</div>
+				<p class="list4footer">1</p>
+			</div>
+			<div class="list5">
+				<p>￥ 1499.00</p>
+			</div>
+		</div>
+		<div class="leavamessagebox">
+			<div class="leavamessage">
+				<p>若您对包裹有特殊要求，请在此留言</p>
+				<input type="text"placeholder="请在此输入...">
+			</div>
+			<div class="leavamessagene">
+				<p class="sorry">抱歉，一下商品展示不能购买，已帮您自动在本次结算中提出并扣减相对应金额，您可以先购买其他商品：</p>
+				<div class="leavamessagene-img clearfix">
+					<div class="leftArea">
+						<img src="images/qingfeng.gif" alt="">
+					</div>
+					<div class="fl">
+						<p class="p1">清风 欧院系列 清香型抽3件dsfdasfddfdas </p>
+						<p>数量：1件</p>
+						<p>￥4.90 <em>（无货）</em> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tallyorderbox clearfix">
+		<p class="tallyorderbox-title">订单结算</p>
+		<div class="tallyorderbox-div">
+			<div class="playtop">
+				<span>总计：</span>
+				<em>￥ 1499.00</em>
+			</div>
+			<input type="button" value="提交订单">
+		</div>
+	</div>
+</div>
+<div class="showlegou">
+	<input type="button" value="页面导航" id="show">
+		<ul>
+			<li><a href="index.html" onclick="window.location.href='index.html'">首页</a></li>
+			<li><a href="产品分类.html" onclick="window.location.href='产品分类.html'">产品分类页</a></a></li>
+			<li><a href="商品介绍.html" onclick="window.location.href='商品介绍.html'">商品介绍页</a></li>
+			<li><a href="筛选页.html" onclick="window.location.href='筛选页.html'">筛选页</a></li>
+			<li><a href="结算页.html" onclick="window.location.href='结算页.html'">结算页</a></li>
+
+		</ul>
+	</div>
+</div>
+<div class="footer">
+	<p><a href="#">乐购简介</a>|<a href="#">乐购公告</a>|<a href="#">招纳贤士</a>|<a href="#">联系我们|客服热线：400-675-1234</a></p> 
+	<p>Copyright © 20014 - 2017 乐购版权所有 &nbsp;&nbsp;&nbsp; 京ICP备09037834号&nbsp;&nbsp;&nbsp;   京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;   某市公安局XX分局备案编号：123456789123</p>
+	<p class="logo_p"><img src="images/banner/xinyong.gif" alt=""><img src="images/banner/xinyong.gif" alt=""><img src="images/banner/xinyong.gif" alt=""><img src="images/banner/xinyong.gif" alt=""></p>
+</div>
+</body>
+</html>

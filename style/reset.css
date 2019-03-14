@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin: 0;padding: 0;}
+body{font-size: 12px;}
+img{border:none;}
+li{list-style: none;}
+input,select,textarea{outline:none;border: none;background: none;}
+/*添加background-color: none; 兼容ie6写法*/
+textarea{resize: none;}
+a{text-decoration: none;color: #656565;}
+/*清除浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.fl{float: left;}
+.fr{float: right;}
+.hide{display: none;}
+.show{display: block;}
+.hr_7{height: 7px;overflow: hidden;}
+.hr_15{height: 20px;overflow: hidden;}
